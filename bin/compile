@@ -6,15 +6,15 @@ GIT_URL="https://github.com/aaverty/editly.git"
 
 npm i -g editly
 
-cd $BUILD_DIR/.heroku
+cd "$BUILD_DIR/.heroku"
 git clone $GIT_URL
 
-cd editly
+cd "editly"
 chmod +x cli.js
-cp -R $BUILD_DIR/.heroku/node/lib/node_modules/editly/node_modules/ .
+cp -R "$BUILD_DIR/.heroku/node/lib/node_modules/editly/node_modules/" "."
 
-cd $BUILD_DIR/.heroku/node/bin
-ln -nfs $BUILD_DIR/.heroku/editly/cli.js editly
+cd "$BUILD_DIR/.heroku/node/bin"
+ln -nfs "$BUILD_DIR/.heroku/editly/cli.js" "editly"
 
 cd $BUILD_DIR
 
