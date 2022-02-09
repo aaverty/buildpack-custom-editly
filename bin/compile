@@ -4,7 +4,7 @@ echo "-----> Install editly"
 BUILD_DIR=/app
 GIT_URL="https://github.com/aaverty/editly.git"
 
-npm i -g editly
+npm i -g "editly"
 
 cd "$BUILD_DIR/.heroku"
 git clone $GIT_URL
