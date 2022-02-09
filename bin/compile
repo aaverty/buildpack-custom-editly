@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "-----> Install editly"
-BUILD_DIR=/app/
+BUILD_DIR=/app
 GIT_URL="https://github.com/aaverty/editly.git"
 
 npm i -g editly
