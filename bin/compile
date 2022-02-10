@@ -15,7 +15,7 @@ chmod "+x" "cli.js"
 cp "-R" "$BUILD_DIR/.heroku/node/lib/node_modules/editly/node_modules/" "."
 
 cd "$BUILD_DIR/.heroku/node/bin"
-ln "-nfs" "$CACHE_DIR/.heroku/editly/cli.js" "editly"
+ln "-nfs" "$CACHE_DIR/editly/cli.js" "editly"
 
 cd $BUILD_DIR
 
